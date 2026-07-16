@@ -1,0 +1,29 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22' # pinned LTS, see the node 26 lesson in the book
+      - run: npm ci
+      # Fresh-clone reproducibility: this is the reader's literal first command
+      # from Chapter 1. If it breaks, every reader hits a dead end, so it is a
+      # gate rather than something we hope still works.
+      - run: ./bootstrap.sh
+      # And again, to hold the line the platform chapter draws: running the
+      # bootstrap twice must be safe.
+      - run: ./bootstrap.sh
+      # Eval the audit-secrets capability: every golden case must pass.
+      - run: npm run eval
+      # Governance gates: naming discipline and the public-prefix leak scan.
+      - run: npm run check:naming
+      - run: npm run check:leak
+      # Sweep every Skill and fail if a real secret drifted into the tree.
+      - run: bash checks/daily-check.sh

@@ -1,0 +1,24 @@
+# GitLab CI equivalent of .github/workflows/ci.yml.
+# Same gates, same pinned toolchain, expressed in GitLab's pipeline syntax.
+stages:
+  - verify
+
+verify:
+  stage: verify
+  image: node:22 # pinned LTS, see the node 26 lesson in the book
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == 'main'
+  script:
+    - npm ci
+    # Fresh-clone reproducibility: the reader's literal first command from
+    # Chapter 1, run twice because an idempotent bootstrap is the claim.
+    - ./bootstrap.sh
+    - ./bootstrap.sh
+    # Eval the audit-secrets capability: every golden case must pass.
+    - npm run eval
+    # Governance gates: naming discipline and the public-prefix leak scan.
+    - npm run check:naming
+    - npm run check:leak
+    # Sweep every Skill and fail if a real secret drifted into the tree.
+    - bash checks/daily-check.sh

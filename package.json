@@ -1,0 +1,18 @@
+{
+  "name": "skill-library-starter",
+  "version": "0.1.0",
+  "description": "A minimal, runnable company-wide Skill library. Companion to the book Implementing Enterprise AI.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "eval": "node eval/run.mjs",
+    "scan": "node skills/audit-secrets/scripts/scan.mjs",
+    "check:naming": "bash checks/check-naming.sh",
+    "check:leak": "bash checks/public-prefix-leak-scan.sh",
+    "ci": "npm run eval && npm run check:naming && npm run check:leak"
+  }
+}

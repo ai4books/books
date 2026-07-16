@@ -141,3 +141,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# --- skill-library-starter ---
+.DS_Store
+# Real env files never get committed. The audit-secrets test fixtures are named
+# env.leaked / env.example (no leading dot) on purpose, so the .env rules above
+# do not hide them. Do not "fix" those names.
