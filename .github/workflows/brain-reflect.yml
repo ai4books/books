@@ -1,0 +1,31 @@
+name: brain-reflect
+# Autonomy faculty: wake the Reflection run weekly. Propose-not-execute — it only commits appended
+# log files (proposals + transparency), never touches the app or sends anything.
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Mondays 13:00 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  reflect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 30
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Reflect (propose-not-execute)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRAIN_PROJECT: ai4books-books
+        run: node scripts/brain-reflect.mjs
+      - name: Commit proposals
+        run: |
+          git config user.name "brain-reflect"
+          git config user.email "brain-reflect@users.noreply.github.com"
+          git add docs/growth/ideas-log.md docs/agent/transparency-log.md 2>/dev/null || true
+          git commit -m "chore(brain): weekly reflection proposals" || { echo "nothing to commit"; exit 0; }
+          git push || echo "push skipped (no permission/remote)"
