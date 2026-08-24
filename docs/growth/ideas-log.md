@@ -44,3 +44,23 @@ _(no reflections yet — the first weekly run, or a manual `node scripts/brain-r
 - **Document daily-check skip/failure modes in `checks/daily-check.sh`.** Add 50-line comment explaining why a Skill is skipped (missing `pyproject.toml`, no test dir, etc.). Governance only sticks if contributors understand what "green" means.
 
 - **Ship `docs/TUTORIAL.md`: "Add your first Skill in 5 minutes."** Walk-through: copy `skills/audit-secrets/`, rename, edit frontmatter + index, run eval, watch it fail, fix the test. Bootstrap gets you running; tutorial gets you contributing—that's where the premise proves.
+
+### 2026-08-24 — reflection
+# Reflection: ai4books-books — Next Actions (Week of 2026-08-17)
+
+## Status
+- **Brain scaffolding**: ✅ Live (five faculties installed; propose-not-execute pattern active)
+- **Core product**: ✅ Runnable (Skill library starter with eval suite, governance gates, CI)
+- **Lessons log**: Empty (no closed feedback loops yet; proposals not yet shipped or validated)
+
+## Proposed Next Actions
+
+- **Ship `docs/TUTORIAL.md`: "Add your first Skill in 5 minutes."** Walk-through: copy `skills/audit-secrets/`, rename, edit frontmatter + `index.mjs`, run eval, watch it fail, fix the test. This unblocks the next user and closes the gap between "clone and run" → "actually contribute." *(Highest leverage: the book's thesis only proves if people add Skills.)*
+
+- **Commit a real bootstrap run outcome to `docs/LESSONS.md` with exact friction observed.** Run `./bootstrap.sh` locally, capture the full output and any hiccups (or vindication of the "7 ok" claim), date it, commit. First signal that the minimal setup works or where it breaks. *(Why: The brain's Feedback faculty is empty; seeding it with lived proof turns proposals into learning.)*
+
+- **Harden `checks/daily-check.sh` with inline skip-reason comments (50 lines max).** Document why a Skill is skipped (missing `pyproject.toml`, no test dir, no `index.mjs`). Governance only sticks if contributors understand what "green" means and how to fix "yellow."
+
+- **Wire weekly Reflection to GitHub Actions (scheduled Friday).** Add `.github/workflows/reflect.yml` that runs `node scripts/brain-reflect.mjs` and opens a PR with the delta. Without automation, the five faculties stay in local memory; proposals only compound if they feed back to the repo.
+
+- **Add `docs/ALIGNMENT.md` mapping README wins to book chapters (1 page).** Eval suite → Ch. 3 "Testing Non-Determinism", Governance gates → Ch. 5 "Naming & Drift", CI → Ch. 6 "Automation." Readers need the book concept mirrored in runnable code, not reverse-engineered.
