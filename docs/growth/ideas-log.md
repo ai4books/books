@@ -64,3 +64,26 @@ _(no reflections yet — the first weekly run, or a manual `node scripts/brain-r
 - **Wire weekly Reflection to GitHub Actions (scheduled Friday).** Add `.github/workflows/reflect.yml` that runs `node scripts/brain-reflect.mjs` and opens a PR with the delta. Without automation, the five faculties stay in local memory; proposals only compound if they feed back to the repo.
 
 - **Add `docs/ALIGNMENT.md` mapping README wins to book chapters (1 page).** Eval suite → Ch. 3 "Testing Non-Determinism", Governance gates → Ch. 5 "Naming & Drift", CI → Ch. 6 "Automation." Readers need the book concept mirrored in runnable code, not reverse-engineered.
+
+### 2026-08-31 — reflection
+# ai4books-books — Reflection Proposals (2026-08-31)
+
+## Status
+- **Brain scaffolding**: ✅ Live (five faculties installed; three weekly reflections completed, zero actions shipped)
+- **Core product**: ✅ Runnable (Skill library starter with eval suite, governance gates, CI)
+- **Lessons log**: 🔴 Empty (proposals stack unexecuted; no feedback cycle closed; brain is decoupled from reality)
+
+## ⚠️ Critical Signal
+Three weeks of proposals with **zero shipped actions** = the propose-not-execute pattern is working as designed, but **no one is executing the proposals**. The brain needs to surface *why* execution stalls, not repeat the same five asks.
+
+## Proposed Next Actions
+
+- **Reduce proposal scope by 75%: ship ONE action per week, not five.** The brain is becoming a backlog generator. Pick the highest-leverage action (currently: `docs/TUTORIAL.md`), commit a target ship date (e.g., "ship by Friday EOD"), and stop proposing until it lands. Rationale: a shipped tutorial unblocks contributors and closes the book's core thesis loop. Everything else is scaffolding.
+
+- **Add an "Execution blockers" section to `docs/BRAIN.md`.** After each weekly reflection, capture *why* the prior week's top action did not ship: "Time?", "Unclear?", "Low priority?", "Blocked on [other task]?". This turns the empty Lessons log into actionable signal instead of repeating the same asks. *(Why: The Feedback faculty is broken if we don't log friction, not just ideas.)*
+
+- **Commit one real bootstrap run outcome to `docs/LESSONS.md` this week.** Run `./bootstrap.sh`, paste the full output, note any friction (or lack thereof). This is the *only* piece of lived signal in the repo right now. Without it, all five faculties are hypothetical. *(Why: The book's "durable governance" thesis can't be proven without proof.)*
+
+- **Wire the Reflection faculty to autopilot: add a Friday GitHub Actions trigger that opens a PR with the delta only if prior actions are documented.** If `docs/BRAIN.md` still has empty "Execution blockers," the job posts a comment and skips the PR. Forces feedback-loop closure before the brain proposes again. *(Why: Automation without consequence is theater.)*
+
+- **Rename "Prior ideas (memory tail)" → "Shipped & Learned" in the next reflection run.** Log what *actually shipped* (tutorial, alignment doc, lessons.md entry, etc.) and what broke so the brain can weight its next proposals. *(Why: Without this, all three faculties are guessing.)*
