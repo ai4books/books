@@ -1,0 +1,13 @@
+{
+  "generatedFrom": "skills-library",
+  "libraryCommit": "a378d46c53f94685957153b0f10b2dc44a5c0658",
+  "installedAt": "2026-09-03T04:01:30.027Z",
+  "skills": {
+    "qa-sweep": {
+      "contentHash": "sha256:816666adea2e70078f0501d186111c073f120cf3516a22e0f0a484d56b1f2245",
+      "source": "skills/quality/qa-sweep",
+      "codeAssets": [],
+      "codeAssetHashes": {}
+    }
+  }
+}
