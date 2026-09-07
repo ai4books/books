@@ -87,3 +87,24 @@ Three weeks of proposals with **zero shipped actions** = the propose-not-execute
 - **Wire the Reflection faculty to autopilot: add a Friday GitHub Actions trigger that opens a PR with the delta only if prior actions are documented.** If `docs/BRAIN.md` still has empty "Execution blockers," the job posts a comment and skips the PR. Forces feedback-loop closure before the brain proposes again. *(Why: Automation without consequence is theater.)*
 
 - **Rename "Prior ideas (memory tail)" → "Shipped & Learned" in the next reflection run.** Log what *actually shipped* (tutorial, alignment doc, lessons.md entry, etc.) and what broke so the brain can weight its next proposals. *(Why: Without this, all three faculties are guessing.)*
+
+### 2026-09-07 — reflection
+# Reflection: ai4books-books — Next Actions (Week of 2026-09-07)
+
+## Status
+- **Brain scaffolding**: ✅ Live (five faculties, three cycles completed)
+- **Core product**: ✅ Runnable (Skill library starter with eval suite, governance gates, CI)
+- **Lessons log**: 🔴 Still empty—zero actions shipped across three weeks; brain is decoupled from execution
+- **New signal**: Prior reflection correctly identified execution stall; **this cycle must prove course correction works**
+
+## Proposed Next Actions
+
+- **Ship `docs/TUTORIAL.md` (Add your first Skill in 5 minutes) by EOW.** Only action this week. Copy–rename–edit–eval walkthrough. This unblocks the book's core thesis (contributors, not just readers) and generates the first lived feedback signal. Document exactly what time it took and what was unclear.
+
+- **Commit one real `./bootstrap.sh` run output to `docs/LESSONS.md` today.** No interpretation, just the output. Proves the "7 ok" claim or surfaces the first friction point. This seeds the Feedback faculty with ground truth.
+
+- **Add "Execution blockers" section to `docs/BRAIN.md` before next Friday reflection.** Log *why* the prior week's top action (tutorial) shipped or didn't: time? clarity? priority shift? This replaces repetition with diagnosis.
+
+- **Schedule GitHub Actions reflect job for Friday, but make it **conditional**: only run if prior cycle's top action is logged in `docs/LESSONS.md`.** Automation that enforces feedback-loop closure, not theater.
+
+- **Rename "Prior ideas" → "Shipped & Learned" in next reflection output.** Track what shipped, what broke, what to weight differently. Without this, the five faculties are noise.
