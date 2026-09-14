@@ -108,3 +108,25 @@ Three weeks of proposals with **zero shipped actions** = the propose-not-execute
 - **Schedule GitHub Actions reflect job for Friday, but make it **conditional**: only run if prior cycle's top action is logged in `docs/LESSONS.md`.** Automation that enforces feedback-loop closure, not theater.
 
 - **Rename "Prior ideas" → "Shipped & Learned" in next reflection output.** Track what shipped, what broke, what to weight differently. Without this, the five faculties are noise.
+
+### 2026-09-14 — reflection
+# ai4books-books — Reflection Proposals (Week of 2026-09-14)
+
+## Status
+- **Brain scaffolding**: ✅ Live (five faculties, four cycles)
+- **Core product**: ✅ Runnable (bootstrap confirmed; eval suite, governance gates, CI all green)
+- **Lessons log**: 🔴 **Still empty** — no actions shipped; no blockers logged; execution stall persists
+- **Critical**: Prior reflection predicted course correction this week. **That prediction has not been validated or falsified.**
+
+## Signal
+Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the brain's feedback loop is broken, not the execution.** The Reflection faculty cannot improve without closing at least one cycle: ship action → log outcome → weight next proposal.
+
+## Proposed Next Actions
+
+- **Pause all proposals. Instead: audit why `docs/TUTORIAL.md` (flagged urgent two weeks ago) hasn't shipped.** Is it genuinely blocked? Deprioritized? Unclear scope? Do a 15-min sync, document the reason in `docs/BRAIN.md` under "Execution blockers," commit it. This *one* diagnosis replaces five blind guesses. *(Highest leverage: fixes the feedback loop itself, not the backlog.)*
+
+- **If `docs/LESSONS.md` is still empty after this week, disable the Reflection faculty entirely.** A brain that proposes without learning is debt, not asset. Re-enable only when one cycle ships → logs outcome → feeds next proposal. *(Why: The book's thesis requires proof that governance gates actually stick; empty logs prove nothing.)*
+
+- **Ship the smallest possible Tutorial (50 lines: copy skill, edit two files, run eval, done) by Thursday EOD.** No scope creep. Measure: can a new contributor follow it in <10 min? Commit the tutorial + the time it took you + one friction note. *(Why: This is the only action that proves the book's core claim works.)*
+
+- **Add a `docs/BLOCKERS.md` file that lists all stalled actions with their blocker reason + owner.** Update it weekly. This is not a shame list; it's a signal that execution stalls are *diagnosed* before proposals repeat. *(Why: Turns "why is nothing shipping?" into a transparent, fixable problem.)*
