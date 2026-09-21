@@ -130,3 +130,22 @@ Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the br
 - **Ship the smallest possible Tutorial (50 lines: copy skill, edit two files, run eval, done) by Thursday EOD.** No scope creep. Measure: can a new contributor follow it in <10 min? Commit the tutorial + the time it took you + one friction note. *(Why: This is the only action that proves the book's core claim works.)*
 
 - **Add a `docs/BLOCKERS.md` file that lists all stalled actions with their blocker reason + owner.** Update it weekly. This is not a shame list; it's a signal that execution stalls are *diagnosed* before proposals repeat. *(Why: Turns "why is nothing shipping?" into a transparent, fixable problem.)*
+
+### 2026-09-21 — reflection
+# ai4books-books — Reflection Proposals (Week of 2026-09-21)
+
+## Status
+- **Brain scaffolding**: ✅ Live; four cycles complete, zero actions shipped
+- **Core product**: ✅ Runnable; bootstrap confirmed green
+- **Feedback loop**: 🔴 **Broken** — proposals stack, execution stalls, no blocker diagnosis logged
+- **Critical insight**: The brain has **diagnosed its own dysfunction** (empty lessons log, no execution validation) but not acted on the diagnosis
+
+## Proposed Next Actions
+
+- **Execute the blocker audit *from the 2026-09-14 reflection* this week: document why `docs/TUTORIAL.md` hasn't shipped in a single paragraph in `docs/BRAIN.md` under "Execution blockers."** Not a proposal. A fact. Ship the diagnosis by Tuesday. This is the prerequisite for all other actions. *(Why: Four weeks of proposals + zero feedback = the brain is proposing into a void. One honest blocker entry proves the loop can close.)*
+
+- **Delete the "Proposed Next Actions" section from the next reflection if `docs/BLOCKERS.md` is not created and updated weekly.** Instead, output only: "Blockers remain undiagnosed. Reflection paused until execution stall is understood." Force triage before ideation. *(Why: Protecting contributor attention from a brain that repeats instead of learns.)*
+
+- **Commit one real outcome (shipped, reverted, or blocked-for-reason) to `docs/growth/lessons-log.md` by Thursday EOD.** Single line: "2026-09-21: Tutorial scope unclear → split into (a) 5-min copy-rename-eval, (b) full docs → shipping (a) Friday." This seeds the Feedback faculty so future reflections can weight what actually works. *(Why: Without this, all five faculties are decorative.)*
+
+- **If the diagnosis (blocker audit + lessons entry) ships, approve ONE action for next week's reflection: ship the 5-min tutorial.** Not five proposals. One. Enforce scope. Measure: <10 min for a new contributor, or refactor and re-measure. *(Why: Tying execution rigor to the brain's output forces honesty.)*
