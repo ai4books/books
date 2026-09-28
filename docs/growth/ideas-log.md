@@ -149,3 +149,22 @@ Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the br
 - **Commit one real outcome (shipped, reverted, or blocked-for-reason) to `docs/growth/lessons-log.md` by Thursday EOD.** Single line: "2026-09-21: Tutorial scope unclear → split into (a) 5-min copy-rename-eval, (b) full docs → shipping (a) Friday." This seeds the Feedback faculty so future reflections can weight what actually works. *(Why: Without this, all five faculties are decorative.)*
 
 - **If the diagnosis (blocker audit + lessons entry) ships, approve ONE action for next week's reflection: ship the 5-min tutorial.** Not five proposals. One. Enforce scope. Measure: <10 min for a new contributor, or refactor and re-measure. *(Why: Tying execution rigor to the brain's output forces honesty.)*
+
+### 2026-09-28 — reflection
+# ai4books-books — Reflection Proposals (Week of 2026-09-28)
+
+## Status
+- **Brain scaffolding**: ✅ Live; five cycles, **zero lessons logged**
+- **Core product**: ✅ Runnable; bootstrap green
+- **Feedback loop**: 🔴 **Stalled at diagnosis** — blocker audit not executed; lessons log remains empty; four weeks of proposals + zero outcome commits
+- **Signal**: Brain correctly identified its own dysfunction but has not validated that diagnosis with a single shipped fact
+
+## Proposed Next Actions
+
+- **This week: commit exactly one sentence to `docs/growth/lessons-log.md` documenting why the blocker audit didn't ship.** (e.g., "2026-09-28: blocker audit deferred; TUTORIAL deprioritized in favor of [X]; diagnosis will resume when [Y] resolves.") Not an apology. A fact. This single entry proves the feedback loop *can* close. *(Highest leverage: unblocks all future proposals by establishing that outcomes are logged.)*
+
+- **Disable the GitHub Actions reflect job for two weeks.** Run reflection *manually* instead. This breaks the false ritual of weekly proposals decoupled from execution. Resume automation only after one full cycle ships → logs → weights next proposal. *(Why: Automation that reinforces dysfunction is worse than silence.)*
+
+- **If `docs/BLOCKERS.md` is not committed by Thursday, replace next week's "Proposed Next Actions" with a single line: "No actions proposed; execution stall undiagnosed."** Force the question: is the blocker real, or has the project paused? *(Why: Defending against a brain that generates busywork.)*
+
+- **Ship the 5-min tutorial (copy skill, edit two fields, run eval) OR document in `BLOCKERS.md` exactly what prevents it.** No middle ground. By Thursday EOD. Measure: new contributor time + one friction note. *(Why: This action is the only proof the book's thesis works; everything else is scaffolding until it ships.)*
