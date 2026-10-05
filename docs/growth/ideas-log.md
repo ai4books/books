@@ -168,3 +168,24 @@ Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the br
 - **If `docs/BLOCKERS.md` is not committed by Thursday, replace next week's "Proposed Next Actions" with a single line: "No actions proposed; execution stall undiagnosed."** Force the question: is the blocker real, or has the project paused? *(Why: Defending against a brain that generates busywork.)*
 
 - **Ship the 5-min tutorial (copy skill, edit two fields, run eval) OR document in `BLOCKERS.md` exactly what prevents it.** No middle ground. By Thursday EOD. Measure: new contributor time + one friction note. *(Why: This action is the only proof the book's thesis works; everything else is scaffolding until it ships.)*
+
+### 2026-10-05 — reflection
+# ai4books-books — Reflection Proposals (Week of 2026-10-05)
+
+## Status
+- **Brain scaffolding**: ✅ Live; reflect job *still* runs weekly, zero manual cycles executed
+- **Core product**: ✅ Runnable; bootstrap green
+- **Feedback loop**: 🔴 **Undiagnosed for four weeks** — no lessons logged, no blockers documented, no outcomes committed
+- **Critical**: Reflection faculty has **diagnosed dysfunction three times** but taken zero diagnostic actions. This is the pattern to break.
+
+---
+
+## Proposed Next Actions
+
+- **Commit one honest line to `docs/growth/lessons-log.md` TODAY: reason tutorial + blocker audit have not shipped.** Not a proposal. A fact. (e.g., "2026-10-05: no execution — project paused / deprioritized / unclear scope; decision made on [DATE] by [OWNER]") This is the prerequisite for all future proposals. *(Highest leverage: closes the diagnosis loop the brain has been stalling for four weeks.)*
+
+- **If that lessons entry is not committed by EOD Tuesday, disable GitHub Actions reflect job.** Reflection becomes manual-only until execution stall is understood. Resume automation only after one cycle ships → logs → weights next proposal. *(Why: Automation that reinforces avoidance is worse than no signal.)*
+
+- **Ship the smallest tutorial payload by Friday EOD: (a) one `.md` file with five steps, (b) copy-paste one field from `audit-secrets` SKILL.md, (c) run `npm run eval`, done.** Measure: new contributor time + one friction note. Commit both. *(Why: Four weeks of blocker diagnosis is debt; one shipped artifact is payment. This is the only proof the book's thesis works.)*
+
+- **Create `docs/BLOCKERS.md` and log *one entry*: why this tutorial took four weeks OR why it will ship Friday.** Update weekly. This becomes the Feedback faculty's primary input — blockers are where proposals learn. *(Why: Turns "why is nothing shipping?" into a transparent, fixable problem that feeds future proposals.)*
