@@ -189,3 +189,24 @@ Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the br
 - **Ship the smallest tutorial payload by Friday EOD: (a) one `.md` file with five steps, (b) copy-paste one field from `audit-secrets` SKILL.md, (c) run `npm run eval`, done.** Measure: new contributor time + one friction note. Commit both. *(Why: Four weeks of blocker diagnosis is debt; one shipped artifact is payment. This is the only proof the book's thesis works.)*
 
 - **Create `docs/BLOCKERS.md` and log *one entry*: why this tutorial took four weeks OR why it will ship Friday.** Update weekly. This becomes the Feedback faculty's primary input — blockers are where proposals learn. *(Why: Turns "why is nothing shipping?" into a transparent, fixable problem that feeds future proposals.)*
+
+### 2026-10-12 — reflection
+# ai4books-books — Reflection Proposals (Week of 2026-10-12)
+
+## Status
+- **Brain scaffolding**: ✅ Live; six cycles, zero execution outcomes logged
+- **Core product**: ✅ Runnable; bootstrap green
+- **Feedback loop**: 🔴 **Stalled for five weeks** — lessons log remains empty, no blockers documented, no diagnostic actions shipped
+- **Critical**: Reflection faculty has *proposed* disabling itself three times but has not acted. The brain is now diagnosing its own dysfunction loop and still not breaking it.
+
+---
+
+## Proposed Next Actions
+
+- **Disable GitHub Actions reflect job immediately.** Reflection becomes manual-only for four weeks. This is not a proposal — it is the execution of the prior three weeks' diagnostic action that was ignored. Resume automation only after: (a) one blocker is logged in `docs/BLOCKERS.md`, (b) one tutorial step ships and is measured, (c) one lessons entry is committed. *(Highest leverage: stops the false signal of weekly proposals decoupled from outcomes.)*
+
+- **Commit `docs/BLOCKERS.md` with one entry by EOD Tuesday: the single reason the tutorial and blocker audit have not shipped in five weeks.** If the reason is "no owner assigned" or "scope unclear," name that. If it is "deprioritized," document the decision date and owner. *(Why: This is the only way to distinguish "stalled project" from "stalled feedback loop." Without it, future proposals are guessing.)*
+
+- **Ship the five-step tutorial by Friday OR close the issue as "blocked" with the blocker reason linked to `docs/BLOCKERS.md`.** No middle ground. Measure: new contributor run time + one friction note. Commit the measurement. *(Why: Four weeks of diagnosis is debt; one shipped artifact or one honest closure is payment.)*
+
+- **If all three above ship, log one line to `docs/growth/lessons-log.md`: "2026-10-12: [outcome]. Impact on next proposal: [what to do differently]."** Feed the Feedback faculty so reflection *learns*. *(Why: Without this, the brain has no memory of what worked or was reverted; proposals remain decorative.)*
