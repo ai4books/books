@@ -210,3 +210,23 @@ Four weeks of proposals + zero shipped actions + no blocker diagnosis = **the br
 - **Ship the five-step tutorial by Friday OR close the issue as "blocked" with the blocker reason linked to `docs/BLOCKERS.md`.** No middle ground. Measure: new contributor run time + one friction note. Commit the measurement. *(Why: Four weeks of diagnosis is debt; one shipped artifact or one honest closure is payment.)*
 
 - **If all three above ship, log one line to `docs/growth/lessons-log.md`: "2026-10-12: [outcome]. Impact on next proposal: [what to do differently]."** Feed the Feedback faculty so reflection *learns*. *(Why: Without this, the brain has no memory of what worked or was reverted; proposals remain decorative.)*
+
+### 2026-10-19 — reflection
+# Reflection Proposals — ai4books-books (Week of 2026-10-19)
+
+## Critical Context
+Six weeks of reflection cycles, **zero lessons logged**, **no blockers documented**, **no outcomes committed**. Brain diagnosed dysfunction three times and proposed self-disabling twice — neither was executed. The feedback loop is broken; the brain is now detecting that it is generating busywork.
+
+---
+
+## Proposed Next Actions
+
+- **Commit `docs/BLOCKERS.md` with one entry by EOD Tuesday:** the single fact blocking tutorial + blocker-audit ship. (e.g., "2026-10-19: tutorial scope undefined — waiting for [owner] decision on [date]" OR "deprioritized for [reason] by [owner]"). This is not optional; it is the prerequisite for all future proposals. Without it, reflection is decorative.
+
+- **Disable GitHub Actions reflect job today.** Stop automating proposals decoupled from outcomes. Manual reflection only — run it *after* a commit ships or a blocker is logged, not on a schedule. Resume automation in four weeks only if: blocker logged + one tutorial artifact shipped + lessons entry written.
+
+- **Ship the five-step tutorial by end of week OR formally close the tutorial issue as "blocked" with `docs/BLOCKERS.md` linked.** Measure: new contributor run time + one friction note. Commit the measurement as `docs/growth/tutorial-run.md`. Do not propose next week until this ships or closes honestly.
+
+- **Log one line to `docs/growth/lessons-log.md` by Friday:** either "2026-10-19: tutorial shipped; [what worked]" or "2026-10-19: blocker confirmed; diagnosis → next cycle." This single entry proves the feedback loop *closes*. It is the only input that makes future proposals smarter instead of busier.
+
+- **If none of the above are committed by Friday EOD, replace next week's reflection with:** "No proposals. Reflection stalled; execution stall undiagnosed. Diagnosis resumes when `docs/BLOCKERS.md` is committed." This forces the choice: fix it or admit the project is paused.
