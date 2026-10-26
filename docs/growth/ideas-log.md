@@ -230,3 +230,23 @@ Six weeks of reflection cycles, **zero lessons logged**, **no blockers documente
 - **Log one line to `docs/growth/lessons-log.md` by Friday:** either "2026-10-19: tutorial shipped; [what worked]" or "2026-10-19: blocker confirmed; diagnosis → next cycle." This single entry proves the feedback loop *closes*. It is the only input that makes future proposals smarter instead of busier.
 
 - **If none of the above are committed by Friday EOD, replace next week's reflection with:** "No proposals. Reflection stalled; execution stall undiagnosed. Diagnosis resumes when `docs/BLOCKERS.md` is committed." This forces the choice: fix it or admit the project is paused.
+
+### 2026-10-26 — reflection
+# Reflection Proposals — ai4books-books (Week of 2026-10-26)
+
+## Critical Status
+**Seven weeks of reflection cycles. Zero execution. Zero lessons logged.** Reflection faculty has now proposed self-disabling three times without execution. Brain is diagnosing its own paralysis loop and reinforcing it. This is the decision point.
+
+---
+
+## Proposed Next Actions
+
+- **Execute the blocker diagnosis TODAY or formally pause the project.** Commit `docs/BLOCKERS.md` with one honest entry (scope undefined / deprioritized / owner missing / timeline unknown) OR commit to `docs/growth/lessons-log.md`: "2026-10-26: project paused; decision owner [name]; resume date [date or 'TBD']." One of these two must land by EOD Tuesday. If neither lands, disable reflect job and mark repo as inactive.
+
+- **Disable GitHub Actions reflect job immediately.** Automation reinforcing a stalled loop is worse than silence. Move to manual-only; run reflection *after* a commit ships, not on schedule. Do not re-enable until: (a) `docs/BLOCKERS.md` exists with ≥1 entry, (b) one tutorial artifact shipped, (c) one lessons line written. Estimated re-enable date: [date or "TBD"].
+
+- **If blocker is logged by Tuesday: ship the five-step tutorial by Friday OR formally close it as blocked.** Measure: new contributor run time + one friction note. Commit measurement to `docs/growth/tutorial-run.md`. This is the only proof the book's thesis runs end-to-end.
+
+- **Commit one lessons entry by Friday:** either "2026-10-26: tutorial shipped + blocker solved" or "2026-10-26: blocker confirmed; unblocking action [X] owned by [name], due [date]." Anything else is not a lesson — it is avoidance. Feed the Feedback faculty or the brain learns nothing.
+
+- **If none of the above are committed by Friday EOD:** Replace next week's reflection with a single fact: "No proposals. Execution stalled; diagnosis unacted. Project status: [active / paused / closed]." Make the state visible instead of hiding behind weekly cycle theater.
