@@ -250,3 +250,23 @@ Six weeks of reflection cycles, **zero lessons logged**, **no blockers documente
 - **Commit one lessons entry by Friday:** either "2026-10-26: tutorial shipped + blocker solved" or "2026-10-26: blocker confirmed; unblocking action [X] owned by [name], due [date]." Anything else is not a lesson — it is avoidance. Feed the Feedback faculty or the brain learns nothing.
 
 - **If none of the above are committed by Friday EOD:** Replace next week's reflection with a single fact: "No proposals. Execution stalled; diagnosis unacted. Project status: [active / paused / closed]." Make the state visible instead of hiding behind weekly cycle theater.
+
+### 2026-11-02 — reflection
+# Reflection Proposals — ai4books-books (Week of 2026-11-02)
+
+## Critical Context
+**Eight weeks of reflection cycles. Zero lessons logged. No blockers documented. No outcomes committed.** Three prior cycles proposed self-disabling; none executed. Brain is now in a locked state: generating proposals that cannot inform themselves because feedback loop is severed.
+
+---
+
+## Proposed Next Actions
+
+- **Commit `docs/BLOCKERS.md` with one entry by EOD Monday.** Not optional. Name the single fact blocking tutorial + blocker-audit. Format: `"2026-11-02: [blocker]. Owner: [name]. Unblock action: [X]. Est. date: [date or 'TBD']."` If no blocker exists, write: `"2026-11-02: No blockers found. Tutorial deprioritized; decision owner [name]."` This is the prerequisite for all future proposals — without it, reflection is broken.
+
+- **Disable GitHub Actions `reflect` job by EOD today.** Automation generating proposals decoupled from outcomes is debt masquerading as work. Halt scheduled runs. Move to manual-only: run reflection *after* a commit ships or a blocker is logged, never on schedule. Re-enable only after: blocker logged + tutorial artifact shipped + one lessons entry written. Estimated: [date or "TBD"].
+
+- **If blocker logged by Monday: ship tutorial by Friday OR close issue as blocked with `BLOCKERS.md` linked.** Measure: new contributor bootstrap run time + one friction note. Commit to `docs/growth/tutorial-run.md`. This single artifact proves the book's thesis runs end-to-end. Anything less is avoidance.
+
+- **Commit one line to `docs/growth/lessons-log.md` by Friday.** Either: `"2026-11-02: [outcome]. What worked: [X]. Next: [Y]."` or `"2026-11-02: blocker confirmed. Unblocking action owned by [name], due [date]."` This entry closes the feedback loop and makes next week's reflection smarter, not busier.
+
+- **If none of the above are committed by Friday EOD: replace next week's reflection with a single state declaration.** `"No proposals. Reflection stalled; execution stall undiagnosed. Project status: [active / paused / closed]. Resume: [date or 'never']."` Make visible what is hidden behind weekly cycle theater. Stop proposing. Start deciding.
