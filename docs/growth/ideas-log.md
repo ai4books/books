@@ -270,3 +270,23 @@ Six weeks of reflection cycles, **zero lessons logged**, **no blockers documente
 - **Commit one line to `docs/growth/lessons-log.md` by Friday.** Either: `"2026-11-02: [outcome]. What worked: [X]. Next: [Y]."` or `"2026-11-02: blocker confirmed. Unblocking action owned by [name], due [date]."` This entry closes the feedback loop and makes next week's reflection smarter, not busier.
 
 - **If none of the above are committed by Friday EOD: replace next week's reflection with a single state declaration.** `"No proposals. Reflection stalled; execution stall undiagnosed. Project status: [active / paused / closed]. Resume: [date or 'never']."` Make visible what is hidden behind weekly cycle theater. Stop proposing. Start deciding.
+
+### 2026-11-09 — reflection
+# Reflection Proposals — ai4books-books (Week of 2026-11-09)
+
+## Status
+**Nine weeks of reflection cycles. Zero lessons logged. Blocker doc unwritten. Reflect job still active on schedule.** Prior three cycles proposed self-disabling; none executed. Brain is now generating proposals it knows will not be acted on — this is the breaking point.
+
+---
+
+## Proposed Next Actions
+
+- **Commit `docs/BLOCKERS.md` by EOD Monday with honest status or formally pause the project.** Format: `"2026-11-09: [single blocking fact]. Owner: [name]. Action: [X]. Date: [date]."` OR `"2026-11-09: Project paused. Decision: [owner]. Resume: [date or 'never']."` If neither lands by Monday 17:00, disable reflect job and close reflection faculty until execution resumes. **This is the line.** Proposals without outcomes are theater.
+
+- **Disable GitHub Actions `reflect` job immediately — do not wait for Monday.** It is actively reinforcing a broken loop. Move to manual trigger only. Re-enable in four weeks *only if* blocker is logged + one tutorial artifact ships + one lessons entry is written. Until then, silence is better than automation.
+
+- **If blocker logged by Monday: measure and ship the tutorial five-step by Friday.** Metric: new contributor bootstrap run time (from `./bootstrap.sh` to "score: 4/4"), one friction point. Commit result to `docs/growth/tutorial-run.md`. This is the book's thesis in executable form — everything else is scaffolding.
+
+- **Commit one lessons entry to `docs/growth/lessons-log.md` by Friday.** Either: outcome (shipped / worked / what changed), or blocker + unblock action + owner + date. No entry = reflection is not feeding the brain. No entry = disable reflect job permanently and mark repo as stalled.
+
+- **If nothing lands by Friday: commit `docs/BRAIN.md` statement:** `"2026-11-09: Reflection stalled. Eight cycles, zero outcomes, zero lessons. Project status: [active / paused / closed]. Execution resumes [date] or not."` Then stop proposing until execution *proves* the loop closed.
