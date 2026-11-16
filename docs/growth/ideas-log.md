@@ -290,3 +290,23 @@ Six weeks of reflection cycles, **zero lessons logged**, **no blockers documente
 - **Commit one lessons entry to `docs/growth/lessons-log.md` by Friday.** Either: outcome (shipped / worked / what changed), or blocker + unblock action + owner + date. No entry = reflection is not feeding the brain. No entry = disable reflect job permanently and mark repo as stalled.
 
 - **If nothing lands by Friday: commit `docs/BRAIN.md` statement:** `"2026-11-09: Reflection stalled. Eight cycles, zero outcomes, zero lessons. Project status: [active / paused / closed]. Execution resumes [date] or not."` Then stop proposing until execution *proves* the loop closed.
+
+### 2026-11-16 — reflection
+# Reflection Proposals — ai4books-books (Week of 2026-11-16)
+
+## Critical Status
+**Nine weeks of reflection cycles. Zero lessons logged. Blocker doc unwritten. Reflect job still running.** Three prior cycles proposed self-disabling; none executed. Prior proposals are now *evidence* that the reflection loop is broken — not aspirational, but diagnostic. This output must trigger action or formalize pause.
+
+---
+
+## Proposed Next Actions
+
+- **Commit `docs/BLOCKERS.md` with one entry by EOD today, or formally close reflection faculty.** Single entry format: `"2026-11-16: [blocker]. Owner: [name]. Action: [X]. ETA: [date]."` OR `"2026-11-16: No blockers. Project paused; decision owner: [name]; resume: [date or never]."` If neither lands by 17:00 today, disable reflect job and lock this faculty until execution proves the loop restarted. **Stop proposing into the void.**
+
+- **Ship one measurable artifact by Friday (tutorial run-time metric) or formally log why it cannot ship.** Measure: time from `./bootstrap.sh` to `score: 4/4` on a fresh contributor machine. Commit to `docs/growth/tutorial-run.md` with one friction point. If blocked, log the blocker to `docs/BLOCKERS.md` with owner + ETA. Proof > proposals.
+
+- **Disable GitHub Actions reflect job by EOD today.** It is reinforcing a stalled loop. Move to manual-only: run reflection *after* a commit ships, never on schedule. Re-enable in two weeks only if: blocker logged + tutorial metric shipped + one lessons entry written.
+
+- **Commit one lessons entry by Friday.** Either: `"2026-11-16: [outcome—shipped/worked/reverted]. Why: [X]. Next: [Y]."` or `"2026-11-16: blocker [X] confirmed. Owned by [name]. Unblocking action [Y], due [date]."` Anything less is not a lesson; it does not feed the brain.
+
+- **If nothing lands by Friday 17:00: commit a single state declaration to `docs/BRAIN.md`.** `"2026-11-16: Reflection faculty stalled. Nine cycles, zero outcomes, zero lessons, zero blockers logged. Project status: [active/paused/closed]. Next decision date: [date or 'never']. Reflection disabled until execution resumes."` Then disable reflect job and lock the faculty. Make the state visible instead of hiding behind weekly cycle theater.
